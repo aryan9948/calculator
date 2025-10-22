@@ -6,7 +6,6 @@ import styles from "./components/componentcss.module.css"
 
 function App() {
   const [calcu, setCalcu] = useState("");
-
   const onbuttonclick = (v) => {
     const operators = ["/", "*", "-", "+", "."];
 

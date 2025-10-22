@@ -1,102 +1,91 @@
-#container{
-    width:365px;
-    height:500px;
-    border:3px solid;
-    border-radius:10px; 
-    box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
-    margin-top:3vh;
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-.button{
-    background-color: rgb(119, 119, 119);
-    color:white;
-    width:60px;
-    height:60px;
-    margin-top:10px;
-    margin-left:-10px;
-    border:3px solid;
-    border-radius:10px;
-    font-size:30px;
-    font-weight: 900;
-    transition:all ease 0.5s;
-}
-#zero{
-    width:150px;
-    height:60px;
-    margin-left:-15px;
-    margin-top:10px;
-    border:3px solid;
-    border-radius:10px;
-    font-weight: 900;
-    font-size:30px;
-    background-color: rgb(119, 119, 119);
-    color: rgb(255, 255, 255);
-    transition:all ease 0.5s;
-}
-#input {
-    width: 350px;
-    height: 60px;
-    margin-top:20px;
-    margin-left:5px;
-    border: 3px solid;
-    border-radius: 10px;
-    font-weight: 900;
-    font-size: 35px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
-    margin-bottom: 10px;
-    text-align: right;
-    padding-right: 10px;
-    color: white;
-    background-color: #222;
-}
-#second,#third,#forth,#fifth{
-    width:254px;
-    height:80px;
-    margin-left:5px;
-}
-#right{
-    width:60px;
-    height:300px;
-    display:flex;
-    margin-left:270px;
-    margin-top:-390px;
-}
-#plus,#enter{
-    margin-top: 20px;
-    width:60px;
-    height: 140px;
-    border:3px solid;
-    border-radius:10px;
-    font-weight: 900;
-    font-size:30px;
-    background-color: rgb(119, 119, 119);
-    transition:all ease 0.5s;
-    color:white;
-   
-}
-#enter{
-font-size:15px;
-font-weight: 900;
-}
-#plus{
-    margin-top: 80px;
-}
-#first{
-    margin-left:5px;
-}
-.button:hover:active,#zero:hover:active,#enter:hover:active,#plus:hover:active{
-    background-color: black;
-    color: blueviolet;
-}
 #body{
+    width:100%;
     display: flex;
     justify-content: center;
-    margin-top:20px;
+    gap: 10px;
+    margin: 8px 0;
+    flex-wrap: wrap;
+    height: 85vh;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    min-width:30%;
+    max-width: fit-content;
+    gap: 10px;
+    margin-top:3px;
+    flex-wrap: wrap;
+}
+.buttonsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 9px 0;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.button, #zero, .equal {
+  width: 70px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: rgb(119, 119, 119);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover, #zero:hover, .equal:hover {
+  background-color: black;
+  color: blueviolet;
+}
+
+#zero {
+  width: 150px; /* wider zero button */
+}
+
+.equal {
+  width: 230px;
+  background-color: blueviolet;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .button, #zero, .equal {
+    width: 55px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  #zero {
+    width: 120px;
+  }
+  .equal {
+    width: 180px;
+  }
+}
+#input{
+    background-color:rgb(69, 192, 244);
+    color: aliceblue;
+    min-width:50vh;
+    max-width: 60vh;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top:2vh;
+    min-height: 7vh;
 }
 #h1{
     font-weight: 900;
-    font-size: xx-large;
-    color:white;
+    font-size:4vh;
 }
